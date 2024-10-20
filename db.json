@@ -1,0 +1,315 @@
+{
+  "tasks": [
+    {
+        "id": "1",
+        "text": "Learn React",
+        "isDone": true
+    },
+    {
+        "id": "2",
+        "text": "Learn TypeScript",
+        "isDone": false
+    },
+    {
+        "id": "3",
+        "text": "Read documentation on Redux",
+        "isDone": false
+    },
+    {
+        "id": "4",
+        "text": "Practice creating custom hooks in React",
+        "isDone": true
+    },
+    {
+        "id": "5",
+        "text": "Learn about React context API",
+        "isDone": false
+    },
+    {
+        "id": "6",
+        "text": "Set up a basic project with Webpack",
+        "isDone": true
+    },
+    {
+        "id": "7",
+        "text": "Understand Babel and its use in JavaScript",
+        "isDone": false
+    },
+    {
+        "id": "8",
+        "text": "Explore Jest for testing React components",
+        "isDone": true
+    },
+    {
+        "id": "9",
+        "text": "Write unit tests for a React component",
+        "isDone": false
+    },
+    {
+        "id": "10",
+        "text": "Learn about React Router for navigation",
+        "isDone": false
+    },
+    {
+        "id": "11",
+        "text": "Create a login form using React",
+        "isDone": false
+    },
+    {
+        "id": "12",
+        "text": "Implement error boundaries in React",
+        "isDone": true
+    },
+    {
+        "id": "13",
+        "text": "Learn how to deploy a React app",
+        "isDone": false
+    },
+    {
+        "id": "14",
+        "text": "Build a simple todo app using React",
+        "isDone": true
+    },
+    {
+        "id": "15",
+        "text": "Use styled-components for styling React apps",
+        "isDone": false
+    },
+    {
+        "id": "16",
+        "text": "Learn how to optimize React performance",
+        "isDone": false
+    },
+    {
+        "id": "17",
+        "text": "Understand server-side rendering with React",
+        "isDone": false
+    },
+    {
+        "id": "18",
+        "text": "Build a dynamic form with React",
+        "isDone": true
+    },
+    {
+        "id": "19",
+        "text": "Integrate an API with Axios in React",
+        "isDone": true
+    },
+    {
+        "id": "20",
+        "text": "Learn about GraphQL and Apollo Client",
+        "isDone": false
+    },
+    {
+        "id": "21",
+        "text": "Understand error handling in React applications",
+        "isDone": false
+    },
+    {
+        "id": "22",
+        "text": "Create a dashboard using React and Chart.js",
+        "isDone": true
+    },
+    {
+        "id": "23",
+        "text": "Explore React Native for mobile development",
+        "isDone": false
+    },
+    {
+        "id": "24",
+        "text": "Learn how to use the React DevTools",
+        "isDone": true
+    },
+    {
+        "id": "25",
+        "text": "Understand memoization in React",
+        "isDone": false
+    },
+    {
+        "id": "26",
+        "text": "Use PropTypes for component validation",
+        "isDone": true
+    },
+    {
+        "id": "27",
+        "text": "Build a multi-page website using React Router",
+        "isDone": false
+    },
+    {
+        "id": "28",
+        "text": "Learn about WebSockets and React integration",
+        "isDone": false
+    },
+    {
+        "id": "29",
+        "text": "Understand React state management with Recoil",
+        "isDone": false
+    },
+    {
+        "id": "30",
+        "text": "Experiment with animation libraries in React",
+        "isDone": true
+    },
+    {
+        "id": "31",
+        "text": "Create a dark/light mode toggle in a React app",
+        "isDone": true
+    },
+    {
+        "id": "32",
+        "text": "Learn how to lazy load components in React",
+        "isDone": false
+    },
+    {
+        "id": "33",
+        "text": "Implement infinite scroll in a React app",
+        "isDone": false
+    },
+    {
+        "id": "34",
+        "text": "Set up TypeScript in an existing React project",
+        "isDone": false
+    },
+    {
+        "id": "35",
+        "text": "Create a custom modal component",
+        "isDone": true
+    },
+    {
+        "id": "36",
+        "text": "Learn how to manage form state with Formik",
+        "isDone": false
+    },
+    {
+        "id": "37",
+        "text": "Create a dynamic search feature in React",
+        "isDone": true
+    },
+    {
+        "id": "38",
+        "text": "Explore React Suspense and its benefits",
+        "isDone": false
+    },
+    {
+        "id": "39",
+        "text": "Optimize images for React apps",
+        "isDone": true
+    },
+    {
+        "id": "40",
+        "text": "Implement drag-and-drop functionality",
+        "isDone": false
+    },
+    {
+        "id": "41",
+        "text": "Learn about static site generation with Next.js",
+        "isDone": true
+    },
+    {
+        "id": "42",
+        "text": "Set up environment variables in a React project",
+        "isDone": true
+    },
+    {
+        "id": "43",
+        "text": "Use React's useReducer hook in a complex component",
+        "isDone": false
+    },
+    {
+        "id": "44",
+        "text": "Implement pagination in a data-heavy React app",
+        "isDone": false
+    },
+    {
+        "id": "45",
+        "text": "Learn about useCallback and useMemo hooks",
+        "isDone": true
+    },
+    {
+        "id": "46",
+        "text": "Build a responsive navigation menu",
+        "isDone": false
+    },
+    {
+        "id": "47",
+        "text": "Use IntersectionObserver for lazy loading images",
+        "isDone": true
+    },
+    {
+        "id": "48",
+        "text": "Create a theme switcher with React context",
+        "isDone": false
+    },
+    {
+        "id": "49",
+        "text": "Explore Server Components in React",
+        "isDone": false
+    },
+    {
+        "id": "50",
+        "text": "Add a loading spinner while fetching data",
+        "isDone": true
+    },
+    {
+        "id": "51",
+        "text": "Create a user authentication flow with JWT",
+        "isDone": false
+    },
+    {
+        "id": "52",
+        "text": "Implement optimistic UI updates",
+        "isDone": true
+    },
+    {
+        "id": "53",
+        "text": "Learn about React Portals",
+        "isDone": false
+    },
+    {
+        "id": "54",
+        "text": "Create a reusable button component",
+        "isDone": true
+    },
+    {
+        "id": "55",
+        "text": "Use React Fragments to group multiple elements",
+        "isDone": true
+    },
+    {
+        "id": "56",
+        "text": "Build a multi-step form with React",
+        "isDone": false
+    },
+    {
+        "id": "57",
+        "text": "Integrate Stripe payments in a React app",
+        "isDone": false
+    },
+    {
+        "id": "58",
+        "text": "Learn about accessibility best practices in React",
+        "isDone": false
+    },
+    {
+        "id": "59",
+        "text": "Implement route guards with React Router",
+        "isDone": true
+    },
+    {
+        "id": "60",
+        "text": "Learn about component composition in React",
+        "isDone": false
+    },
+    {
+        "id": "61",
+        "text": "Use debounce and throttle in search input",
+        "isDone": true
+    },
+    {
+        "id": "62",
+        "text": "Learn to create custom error messages in forms",
+        "isDone": false
+    }
+]
+
+}
