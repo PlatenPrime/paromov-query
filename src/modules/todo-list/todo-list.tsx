@@ -1,4 +1,4 @@
-import { useQuery } from "@tanstack/react-query"
+import { keepPreviousData, useQuery } from "@tanstack/react-query"
 import { todoListApi } from "./api"
 import { useState } from "react"
 
@@ -15,12 +15,31 @@ export function TodoList() {
 
     const [page, setPage] = useState(1);
 
-    const { data: todoItems, error, isPending } = useQuery({
+const [enabled, setEnabled] = useState(true);
+
+
+
+
+    const { 
+        data: todoItems, 
+        error, 
+        isLoading, 
+        isPlaceholderData ,
+        status,
+        fetchStatus,
+
+    
+    } = useQuery({
         queryKey: ['tasks', "list", {page}],
-        queryFn: (meta) => todoListApi.getTodoList({ page }, meta)
+        queryFn: (meta) => todoListApi.getTodoList({ page }, meta),
+        placeholderData: keepPreviousData,
+        enabled: enabled
     })
 
-    if (isPending) {
+
+
+    // status = "pending" && fetchStatus = "fetching"
+    if (isLoading) {
         return <div>Loading...</div>
     }
 
@@ -29,15 +48,29 @@ export function TodoList() {
     }
 
 
+    console.log(status, fetchStatus);
+    
+
     return (
         <div
             className="p-5 mx-auto max-w-[1200px] grid gap-5"
         >
             <h1
-                className="text-3xl font-bold underline text-center"
+                className={`text-3xl font-bold underline text-center
+                    ${isPlaceholderData ? "text-red-500" : ""}
+                    
+                    `}
             >
                 Todo List
             </h1>
+
+
+            <button
+            className="border p-2 bg-teal-200 rounded-xl cursor-pointer transition duration-300 ease-in-out"
+                onClick={() => setEnabled(e => !e)}
+            >
+                {enabled ? "Disable" : "Enable"}
+            </button>
 
             <div
                 className="grid gap-2"
