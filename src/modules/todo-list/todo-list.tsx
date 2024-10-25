@@ -7,7 +7,7 @@ import { todoListApi } from "./api";
 import { useCallback, useRef, useState } from "react";
 
 export function TodoList() {
-  const [page, setPage] = useState(1);
+  // const [page, setPage] = useState(1);
 
   const [enabled, setEnabled] = useState(true);
 
@@ -35,12 +35,8 @@ export function TodoList() {
     hasNextPage,
     isFetchingNextPage
   } = useInfiniteQuery({
-    queryKey: ["tasks", "list"],
-    queryFn: meta => todoListApi.getTodoList({ page: meta.pageParam }, meta),
-    initialPageParam: 1,
-    getNextPageParam: result => result.next,
-    enabled: enabled,
-    select: result => result.pages.flatMap(page => page.data)
+    ...todoListApi.getTodoListInfinityQueryOptions(),
+    enabled: enabled
   });
 
   const cursorRef = useIntersection(() => {
