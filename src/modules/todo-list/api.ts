@@ -1,4 +1,5 @@
 import { infiniteQueryOptions, queryOptions } from "@tanstack/react-query";
+import { jsonApiInstance } from "../../shared/api/api-instance";
 
 const BASE_URL = "http://localhost:3001";
 
@@ -29,13 +30,11 @@ export const todoListApi = {
     return (await res.json()) as PaginatedResult<TodoDto>;
   },
 
-
-  getTodoListQueryOptions: ({page} : {page: number}) => {
+  getTodoListQueryOptions: ({ page }: { page: number }) => {
     return queryOptions({
-      queryKey: ['tasks', "list", {page}],
-      queryFn: meta => todoListApi.getTodoList({ page }, meta),
-    
-    }); 
+      queryKey: ["tasks", "list", { page }],
+      queryFn: meta =>   jsonApiInstance<TodoDto>(`/tasks?_page=${page}&_per_page=10`, {signal: meta.signal}),
+    });
   },
 
   getTodoListInfinityQueryOptions: () => {
