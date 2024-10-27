@@ -33,14 +33,14 @@ export const todoListApi = {
   getTodoListQueryOptions: ({ page }: { page: number }) => {
     return queryOptions({
       queryKey: ["tasks", "list", { page }],
-      queryFn: meta =>   jsonApiInstance<TodoDto>(`/tasks?_page=${page}&_per_page=10`, {signal: meta.signal}),
+      queryFn: meta =>   jsonApiInstance<PaginatedResult<TodoDto>>(`/tasks?_page=${page}&_per_page=10`, {signal: meta.signal}),
     });
   },
 
   getTodoListInfinityQueryOptions: () => {
     return infiniteQueryOptions({
       queryKey: ["tasks", "list"],
-      queryFn: meta => todoListApi.getTodoList({ page: meta.pageParam }, meta),
+      queryFn: meta =>   jsonApiInstance<PaginatedResult<TodoDto>>(`/tasks?_page=${meta.pageParam}&_per_page=10`, {signal: meta.signal}),
       initialPageParam: 1,
       getNextPageParam: result => result.next,
       select: result => result.pages.flatMap(page => page.data)
